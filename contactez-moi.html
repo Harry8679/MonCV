@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title>
+</head>
+<body>
+    <h1>Espace Contact</h1>
+
+    <ul>
+        <li>Mon numéro de téléphone: <strong>0635428765</strong></li>
+        <li>Mon adresse email : <strong>harry.maccode@la-hauteur-de-la-profondeur.fr</strong></li>
+        <li>Mon compte LinkedIn : <strong>Harry MacCode</strong></li>
+    </ul>
+    <hr>
+
+    <form action="mailto:harry.maccode@lhlp.fr" method="post">
+        <label for="name">Votre nom :</label><br>
+        <input type="text" name="yourName" id="yourName" placeholder="Entrez votre nom complet" /><br>
+
+        <label for="name">Votre email :</label><br>
+        <input type="email" name="yourEmail" id="yourEmail" placeholder="Entrez votre email" /><br>
+
+        <label for="name">Votre message :</label><br>
+        <textarea name="youMessage" id="youMessage" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Enoyer votre demande">
+    </form>
+
+    <hr>
+    <h3><a href="index.html">Retour à la page d'accueil</a></h3>
+    <form action="">
+        <fieldset>
+            <legend>Vous voulez me contacter ?</legend>
+            <label for="nom">Votre nom :</label><br/>
+            <input type="text" /><br/>
+
+            <label for="prenom">Votre prénom :</label><br/>
+            <input type="text" /><br/>
+
+            <input type="radio" name="sexe" />
+            <label for="homme">Homme</label>
+
+            <input type="radio" name="sexe" />
+            <label for="femme">Femme</label>
+
+            <p>
+                <strong>Les langages informatiques que vous aimez :</strong><br>
+                <label for="html">HTML</label>
+                <input type="checkbox" name="langages">
+
+                <label for="css">CSS</label>
+                <input type="checkbox" name="langages">
+
+                <label for="php">PHP</label>
+                <input type="checkbox" name="langages">
+
+                <label for="js">JavaScript</label>
+                <input type="checkbox" name="langages"><br>
+
+                <span>Pour l'informatique vous motive ? :</span><br>
+                <textarea name="" id="" cols="30" rows="6"></textarea><br><br>
+
+                <label for="frameworks">Choisissez votre Framework préféré</label><br><br>
+
+                <label for="frame">Choisi ton Framework :</label>
+                <input list="framework" name="frame" id="frame" />
+
+                <datalist id="framework">
+                        <option value="React">
+                        <option value="Vue">
+                        <option value="Angular">
+                        <option value="Bootstrap">
+                        <option value="Ember JS">
+                </datalist><br><br>
+
+                <select name="frameworks" id="frameworks">
+                    <optgroup label="Framework Front">
+                        <option value="angular">Angular</option>
+                        <option value="react">React</option>
+                        <option value="vue">Vue JS</option>
+                        <option value="react">EmberJS</option>
+                        <option value="react">Bootstrap</option>
+                        <option value="react">Tailwind CSS</option>
+                        <option value="react">Bulma</option>
+                        <option value="react">jQuery</option>
+                        <option value="react">D3 JS</option>
+                        <option value="react">Twig</option>
+                    </optgroup>
+                    
+                    <optgroup label="Frameworks Back">
+                        <option value="nodejs">Node JS</option>
+                        <option value="symfony">Symfony</option>
+                        <option value="symfony">Laravel</option>
+                        <option value="symfony">Cake PHP</option>
+                        <option value="react">Ruby on Rails</option>
+                        <option value="react">Python Flask</option>
+                        <option value="react">Django</option>
+                        <option value="react">Spring</option>
+                        <option value="react">Java EE</option>
+                        <option value="react">Spring Boot</option>
+                        <option value="react">Langage R</option>
+                    </optgroup>
+                </select><br><br>
+
+                <input type="email" placeholder="Entre votre email" required="required" /><br><br>
+                <input type="password" placeholder="Entre votre mot de passe"><br>
+
+                <label for="color">Quel est votre couleur préférée ?</label>
+                <input type="color" id="myColor" name="myColor"><br>
+
+                <label for="birthday">Votre anniversaire</label>
+                <input type="date" name="birthday" id="birthday"><br>
+
+                <label for="cv">Insérer votre CV</label>
+                <input type="file" id="myFile" name="myFile"><br><br>
+
+                <label for="bMonth">Mois de votre anniversaire :</label>
+                <input type="month" id="bMonth" name="bMonth"><br><br>
+
+                <label for="week">Semaine de votre anniversaire :</label>
+                <input type="week" id="myWeek" name="myWeek"><br><br>
+
+                <label for="children">Combien d'enfant(s) avez-vous ?</label>
+                <input type="number"  id="quantity" name="quantity" min="0" max="5"/>
+
+                <br><br><br>
+                <input type="reset" value="Réinitialisez le formulaire">
+
+                <input type="submit" value="Soumettre le formulaire">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
